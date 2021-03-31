@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js""></script>
+</head>
+<body>
+  <div class="container">
+    <h1>E-Calculator</h1>
+
+    <form>
+      <table>
+
+        <tr>
+          <td colspan="3">
+             <input type="text" class="display" name="display" id="display" disabled>
+          </td>
+          <td><input type="button" class="clear" id="clear" name="clear" value="C" onclick="clearDisplayScreen()"></td>
+        </tr>
+       
+        <tr>
+          <td><input type="button" name="seven" id="seven" value="7" onclick="displayInScreen(7)"></td>
+          <td><input type="button" name="eight" id="eight" value="8" onclick="displayInScreen(8)"></td>
+          <td><input type="button" name="nine" id="nine" value="9" onclick="displayInScreen(9)"></td>
+          <td><input type="button" class="operator" id="times" name="times" value="x" onclick="displayInScreen('*')"></td>
+        </tr>
+        
+        <tr>
+          <td><input type="button" name="four" id="four" value="4" onclick="displayInScreen(4)"></td>
+          <td><input type="button" name="five" id="five" value="5" onclick="displayInScreen(5)"></td>
+          <td><input type="button" name="six" id="six" value="6" onclick="displayInScreen(6)"></td>
+          <td><input type="button" class="operator" id="minus" name="minus" value="-" onclick="displayInScreen('-')"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" name="one" id="one" value="1" onclick="displayInScreen(1)"></td>
+          <td><input type="button" name="two" id="two" value="2" onclick="displayInScreen(2)"></td>
+          <td><input type="button" name="three" id="three" value="3" onclick="displayInScreen(3)"></td>
+          <td><input type="button" class="operator" id="plus" name="plus" value="+" onclick="displayInScreen('+')"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" class="operator" id="decimal" name="decimal" value="." onclick="displayInScreen('.')"></td>
+          <td><input type="button" id="zero" name="zero" value="0" onclick="displayInScreen(0)"></td>
+          <td><input type="button" name="eval" id="eval" value="=" onclick="evaluateDisplayScreen()"></td>
+          <td><input type="button" class="operator" id="div" name="div" value="/" onclick="displayInScreen('/')"></td>
+         </tr>
+
+      </table>
+   </form>
+  </div>
+</body>
+</html>
